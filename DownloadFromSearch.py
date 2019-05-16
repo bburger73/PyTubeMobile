@@ -1,5 +1,10 @@
-useMe = "visual design"
+searchTerm = "visual design"
 amount = 5
+
+'''
+    Must have PyTube and beautiful soup installed
+'''
+
 
 def downloadFromSearch(vidCount,searchTerm):
     import urllib.request
@@ -40,8 +45,4 @@ def downloadFromSearch(vidCount,searchTerm):
     else:
         print("No Videos found")
 
-downloadFromSearch(amount,useMe)
-'''
-   ToDo:
-        A skip command to skip non videos
-''' 
+downloadFromSearch(amount,searchTerm)
